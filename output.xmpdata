@@ -1,0 +1,13 @@
+\Title{Ottimizzazione di Large Language Model: Retrieval Augmented Generation e tecniche avanzate di Prompting.}
+\Author{Tao Ren Federico Ye}
+\Language{it-IT}
+\Subject{Il presente documento descrive il lavoro svolto durante il periodo di stage presso l'azienda Zero12 Srl.
+Obiettivo dello stage era la creazione un sistema di intelligenza artificiale, connesso a tool di mercato con la suite Atlassian Jira, per analizzare in tempo reale i ticket di supporto attivi e, basandosi sulla conoscenza del contesto, il codice applicativo del progetto e i ticket pregressi, suggerire all’operatore delle possibili soluzioni alla risoluzione del problema.
+Il progetto è stato svolto assieme ad un altro compagno di corso. Il tutor aziendale è stato attento a proporci piani di lavoro adeguati, pensati in modo da differenziare il nostro lavoro. 
+La parte assegnatami si è incentrata principalmente sul fornire la funzionalità di generazione della proposta di risoluzione utilizzando modelli AI eseguiti localmente, come alternativa ai modelli forniti da AWS Bedrock e introdurre i concetti di feedback, learning continuo e trasparenza.
+Infine ho svolto un confronto tra i modelli cloud e locali al fine di individuare ulteriori limiti presenti in questi ultimi. 
+Attraverso l'uso di tecniche avanzate, questo progetto mira a contribuire allo 
+sviluppo e all'ottimizzazione dei Large Language Model, rendendoli più 
+efficaci ed adattabili alle esigenze reali delle applicazioni di generazione 
+del linguaggio.}
+\Keywords{Large Language Model\sep Retrieval Augmented Generation\sep Prompting\sep AI generativa}

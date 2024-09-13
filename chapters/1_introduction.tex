@@ -1,0 +1,198 @@
+\chapter{Introduzione}
+\label{chap:introduzione}
+
+\textit{Questo capitolo può essere suddiviso in due parti: la prima contiene informazioni sullo stage come l'azienda ospitante, la loro proposta di stage, il Way of Working adottato, la pianificazione del lavoro e i strumenti organizzativi utilizzati,  mentre nella seconda vi è una veloce descrizione della struttura e dei contenuti trattati nei vari capitoli di questo documento}
+
+\section{Lo stage}
+\subsection{L'azienda}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[alt={Logo dell'azienda Zero12 Srl}, width=0.5\columnwidth]{img/zero12Logo.jpg}
+    \caption{Logo dell'azienda Zero12 Srl.}
+    \label{fig:company_logo}
+\end{figure}
+
+Zero12 Srl, logo in Figura \ref{fig:company_logo}, è un'azienda informatica specializzata nello sviluppo 
+di soluzioni software innovative per migliorare l'efficienza e l'automazione dei processi aziendali.\\
+Fondata con l'obiettivo di integrare tecnologie avanzate per supportare le aziende nella 
+digitalizzazione, offre servizi di consulenza e sviluppo software personalizzati, 
+concentrati su applicazioni web, mobile e soluzioni su \textit{cloud}.\\
+L'azienda si distingue per la sua capacità di adattare le tecnologie emergenti alle 
+esigenze specifiche dei clienti, contribuendo così a ottimizzare le operazioni e 
+promuovere la crescita aziendale nel contesto digitale contemporaneo. 
+In particolare Zero12 è partner di Amazon Web Services e MongoDB con i quali offre 
+soluzioni scalabili per l'analisi dei Big Data in tempo reale. 
+
+\subsection{Team di lavoro}
+Lo stage è stato svolto sotto la guida dei tutor aziendali e in collaborazione con un altro stagista dell'Università di Padova. \\
+Il team di lavoro era composto da:
+\begin{itemize}
+    \item \textbf{Michele Massaro} - Tutor aziendale - Project Manager
+    \item \textbf{Samuele De Simone} - Tutor aziendale - Software Developer
+    \item \textbf{Endi Hysa} - Stagista
+    \item \textbf{Tao Ren Federico Ye} - Stagista
+\end{itemize}
+
+% \section{La proposta di stage}
+% \lipsum[1-3]
+
+\subsection{Way of Working e Piano di lavoro}
+Durante lo stage è stata adottata la metodologia Agile di sviluppo, al fine di avere un 
+continuo riscontro da parte del tutor aziendale e pianificare dinamicamente le attività da 
+svolgere. Nello specifico, all'inizio di ogni settimana si teneva un meeting che svolgeva 
+il duplice ruolo di \textit{sprint review} e \textit{sprint planning} della durata di 
+circa 30 minuti. Durante la prima metà si presentava brevemente il lavoro svolto, 
+motivando le scelte progettuali e di sviluppo fatte, le difficoltà riscontrate e le 
+soluzioni adottate, nel caso se si è riusciti a superarle, e gli obiettivi raggiunti.\\ 
+Nella seconda parte il tutor, oltre a fornire un \textit{feedback} sugli avanzamenti e 
+dare qualche consiglio su delle migliorie apportabili, definiva, in base al progresso 
+svolto e il piano di lavoro concordato, le attività per la settimana e le funzionalità su 
+cui concentrarsi.\\
+Come da pianificazione, lo stage è stato suddiviso in 5 \textit{sprint}:
+\begin{itemize}
+    \item il primo e l'ultimo dalla durata di 1 settimana;
+    \item i restanti tre dalla durata di 2 settimane;
+\end{itemize}
+ciascuno incentrato su un tema principale, come si può vedere nella tabella \ref{tab:piano_lavoro}.
+
+\setlength{\tabcolsep}{8pt}
+\begin{center}
+    \rowcolors{1}{}{tableGray}
+    \begin{longtable}{|p{2.25cm}|p{10cm}|p{2.25cm}|}
+    \hline
+    \multicolumn{1}{|c|}{\textbf{Sprint}} & \multicolumn{1}{c|}{\textbf{Attività pianificate}}\\ 
+    \hline 
+    \endfirsthead
+    \rowcolor{white}
+    \multicolumn{3}{c}{{\bfseries \tablename\ \thetable{} -- Continuo della tabella}}\\
+    \hline
+    \multicolumn{1}{|c|}{\textbf{Sprint}} & \multicolumn{1}{c|}{Attività pianificate}\\ \hline 
+    \endhead
+    \hline
+    \rowcolor{white}
+    \multicolumn{3}{|r|}{{Continua nella prossima pagina...}}\\
+    \hline
+    \endfoot
+    \endlastfoot 
+    Sprint 1 & Lo scopo del primo sprint di lavoro per lo studente è quello di andare ad apprendere: metodologia di lavoro agile, scrittura delle \textit{user stories} specifiche del progetto di stage da realizzare, apprendere le tecnologie e linguaggi di programmazione che saranno utilizzati per la realizzazione del progetto e analisi e studio del codice esistente.\\
+    \hline
+    Sprint 2 & Creazione del modulo LLM locale che sostituisca in modo trasparente AWS Bedrock.
+    Definire procedura di training con il re-import dei dati e creazione di una interfaccia che consenta lo switch da un servizio di generative AI all’altro in modo dinamico senza richiedere il \textit{deploy} del software \\
+    \hline
+    Sprint 3 & Creazione del processo di retroazione per dare feedback al modello di LLM per migliorare dall’apprendimento continuo la qualità delle risposte. Le specifiche andranno definite in corso d’opera. \\
+    \hline
+    Sprint 4 & Creazione del processo che in modo visuale consenta di mostrare in modo trasparente e semplice agli utenti che il modello è stato addestrato secondo i carismi di trasparenza, sicurezza ed eticità. Le specifiche andranno definite in corso d’opera. \\
+    \hline
+    Sprint 5 & Attività di testing e produzione della documentazione del lavoro svolto. \\
+    \hline
+    \hiderowcolors
+    \caption{Pianificazione delle attività previste durante lo stage.}
+    \label{tab:piano_lavoro}
+    \end{longtable}
+\end{center}
+
+
+\subsection{Strumenti organizzativi}
+Come strumenti organizzativi sono stati utilizzati:
+\begin{itemize}
+    \item \textbf{Jira}: sistema software utilizzato per la gestione delle attività, l'assegnazione delle risorse, la verifica dei tempi del progetto e l'analisi del lavoro svolto e da svolgere, è stato utilizzato durante lo stage per la pianificazione ed assegnazione dei compiti da svolgere per ciascuna settimana. Ciascun compito compariva nella sezione \textit{Board} e poteva assumere uno dei seguenti tre stati: "Da completare" se non ancora iniziato, "In corso" e "Completato". In questo modo era possibile per il team visualizzare durante la settimana e agli incontri il progresso fatto finora.
+\end{itemize}
+
+
+\subsection{Strumenti comunicativi}
+Come strumenti comunicativi sono stati utilizzati:
+\begin{itemize}
+    \item \textbf{Microsoft Teams}: piattaforma di comunicazione e collaborazione unificata che combina \textit{chat} di lavoro persistente, teleconferenza, condivisione di contenuti e integrazione delle applicazioni. Durante lo stage è stato utilizzato principalmente per due scopi: come mezzo per svolgere gli incontri settimanali di \textit{review} e textit{planning} attraverso videochiamata nel caso qualche membro del team fosse a casa quel giorno e per la presentazione finale in azienda del progetto svolto durante i due mesi di tirocinio, sempre per permettere ai colleghi da remoto di partecipare;
+    \item \textbf{Slack}: strumento di collaborazione aziendale utilizzato per inviare messaggi in modo istantaneo ai membri del team, con la possibilità di organizzare la comunicazione del team attraverso canali specifici, canali che possono essere accessibili a tutto il team o solo ad alcuni membri. Utilizzato per comunicare in modo rapido con i tutor aziendali e il compagno di stage, scambiarsi file o link facilmente e svolgere chiamate individuali. 
+\end{itemize}
+
+\subsection{Proposta di stage}
+
+L'obiettivo del mio stage era innanzitutto fornire la funzionalità di 
+generazione di una proposta di risoluzione dell'assistente di Jira impiegando 
+la tecnica della \textit{Retrieval Augmented Generation}, ma sfruttando un 
+\textit{Large Language Model} eseguito localmente, esplorando quindi la possibilità di utilizzare questi modelli come alternativa a quelli offerti da \textit{AWS Bedrock}. 
+A tal fine ho dovuto anche svolgere dei \textit{becnhmark} per individuare l'\textit{embedding model} e il LLM migliori.\\
+In seguito mi è stato chiesto di sviluppare una versione chatbot 
+dell'assistente, comprendente di interfaccia utente e funzionalità base di 
+un'applicazione conversazionale come la memoria e la gestione di domande fuori contesto o casi eccezionali. 
+Anche qui mi è stata assegnata l'implementazione attraverso modelli locali.\\
+Proseguendo poi lo stage da solo, dato che il mio compagno aveva iniziato 
+prima di me, ho migliorato questa seconda versione dell'assistente 
+introducendo maggiore trasparenza e un sistema per migliorare le risposte 
+dell'AI attraverso l'inserimento di diverse tipologie di feedback.\\
+Per finire ho condotto delle verifiche per determinare il grado di miglioramento delle risposte introducendo il sistema dei riscontri, 
+confrontando allo stesso tempo le prestazioni tra i modelli cloud e quelli locali.
+
+\newpage
+\section{Organizzazione del testo}
+
+\subsection{Il secondo capitolo - Background}
+Questo capitolo ha lo scopo di introdurre il lettore agli argomenti teorici 
+affrontati durante lo stage, fornendo un'infarinatura generale sul tema 
+dell'Intelligenza Artificiale e le sotto-aree più rilevanti per il progetto, 
+ad esempio l'AI generativa, i modelli di linguaggio di grandi dimensioni e la 
+tecnica della \textit{Retrieval Augmented Generation(RAG)}.\\
+Nella seconda metà ho poi elencato i linguaggi di programmazione e le 
+tecnologie utilizzate, presentando brevemente le loro funzionalità, punti di
+forza ed esempi di applicazione nel mondo dell'informatica e nel progetto di 
+tirocinio. 
+Le principali sono Ollama, piattaforma per l'installazione e l'esecuzione dei 
+modelli localmente, MongoDB come database per archiviare sia i documenti che i 
+vettori di \textit{embedding} utilizzati dalla Ricerca Vettoriale per 
+recuperare informazioni inerenti utili per generare risposte più precise con
+la tecnica della RAG, e Streamlit per la realizzazione dell'interfaccia utente 
+di uno dei 2 prototipi.
+
+\subsection{Il terzo capitolo - Sviluppo}
+Il capitolo è dedicato allo sviluppo e descrive in dettaglio le due versioni 
+dell'assistente AI per il supporto tecnico e le conclusioni emerse dal 
+confronto tra le prestazioni dei modelli cloud e dei modelli locali.
+Il processo di sviluppo è tracciato in ordine cronologico, seguendo le 
+attività svolte durante i due mesi di stage e organizzato in base agli 
+\textit{sprint} pianificati. 
+Per ogni fase del lavoro, vengono descritti i principali temi affrontati, le 
+funzionalità implementate, gli ostacoli superati, le soluzioni adottate, le 
+scelte tecnologiche effettuate e i risultati ottenuti. \\
+In particolare, tra i temi affrontati, i più interessanti sono la scelta dei 
+modelli di generazione degli \textit{embeddings} e delle risposte, il flusso 
+di esecuzione dell'assistente per comprendere il funzionamento della RAG, 
+l'evoluzione del \textit{prompt} tra la prima e la seconda versione 
+dell'assistente. 
+Il capitolo si conclude con una discussione sulle conclusioni tratte dallo 
+sviluppo e dal testing finale.\\
+Quest'ultima è stata svolta per determinare l'impatto del sistema di feedback 
+sulle risposte generate e per svolgere un confronto tra i modelli presenti su 
+Bedrock e quelli forniti da Ollama. Si è messo in evidenza i punti di forza 
+dei primi, ma fornendo anche possibili tecniche da utilizzare per migliorare 
+le prestazioni di LLMs locali, rendendoli una valida alternativa.
+
+\subsection{Il quarto capitolo - Conclusioni}
+Il capitolo delle conclusioni riassume i risultati e le esperienze maturate 
+durante il tirocinio. Nella sezione iniziale, viene sottolineata l'utilità 
+dello stage, che ha permesso di acquisire competenze pratiche non sempre 
+presenti nel percorso accademico, soprattutto nell'ambito dell'Intelligenza 
+Artificiale Generativa (Generative AI). Il lavoro, svolto in collaborazione 
+con i tutor aziendali e un collega, ha portato allo sviluppo di prototipi 
+funzionali e al raggiungimento degli obiettivi prefissati.\\
+Il capitolo evidenzia anche l'acquisizione di nuove competenze tecniche, tra 
+cui l'uso di linguaggi come Javascript e Typescript, e la conoscenza di 
+database No-SQL come MongoDB. Sono stati approfonditi temi di attualità come 
+la \textit{Retrieval Augmented Generation} e l'uso del \textit{framework}
+LangChain e Streamlit per realizzare rapidamente applicazioni che utilizzano 
+l'Intelligenza Artificiale. 
+L'esperienza ha inoltre permesso di migliorare le \textit{soft skills} e di 
+entrare in contatto con il mondo del lavoro, imparando metodologie di sviluppo 
+agile e la gestione di progetti collaborativi.
+
+\subsection{Convenzioni tipografiche}
+
+Riguardo la stesura del testo, relativamente al documento sono state adottate le seguenti convenzioni tipografiche:
+\begin{itemize}
+	\item gli acronimi, le abbreviazioni e i termini ambigui o di uso non comune menzionati vengono definiti alla loro prima occorrenza nel testo;
+	\item i termini in lingua straniera o sono evidenziati con il carattere \textit{corsivo}.
+\end{itemize}
+
+
+\newpage
